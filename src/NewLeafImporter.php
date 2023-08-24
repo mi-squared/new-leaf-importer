@@ -141,7 +141,7 @@ class NewLeafImporter implements ImporterServiceInterface, ColumnMapperInterface
         // After the initial mapping, we need to do some additional formatting
         $mapped_data['DOB'] = date("Y-m-d", strtotime($mapped_data['DOB']));
 
-        if ($mapped_data['sex'] == "M" || strtolower(mapped_data['sex']) == "male") {
+        if ($mapped_data['sex'] == "M" || strtolower($mapped_data['sex']) == "male") {
             $mapped_data['sex'] = "Male";
         } else if ($mapped_data['sex'] == "F" || strtolower($mapped_data['sex']) == "memale") {
             $mapped_data['sex'] = "Female";
